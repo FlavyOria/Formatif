@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>JavaScript Form Validation Demo</title>
+ <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ <div class="container">
+ <form id="signup" class="form">
+ <h1>S'inscrire</h1>
+ <div class="form-field">
+ <label for="username">Nom d'utilisateur:</label>
+ <input type="text" name="username" id="username" autocomplete="off" 
+        minlength="3" maxlength="25" required placeholder="Choisissez un nom d'utilisateur">
+ <small id="usernameError" class="error"></small>
+ </div>
+ <div class="form-field">
+ <label for="email">E-mail:</label>
+ <input type="text" name="email" id="email" autocomplete="off" required placeholder="Entrer votre Email">
+ <small id="emailError" class="error"></small>
+ </div>
+ <div class="form-field">
+ <label for="password">Mot de passe:</label>
+ <input type="password" name="password" id="password" autocomplete="off" 
+        minlength="8" required placeholder="Entrez un mot de passe fort">
+ <small id="passwordError" class="error"></small>
+ </div>
+ <div class="form-field">
+ <label for="confirm-password">Confirmez le mot de passe:</label>
+ <input type="password" name="confirm-password" id="confirm-password" 
+        autocomplete="off" required placeholder="Entrez à nouveau votre mot de passe">
+ <small id="confirmPasswordError" class="error"></small>
+ </div>
+ <div class="form-field">
+ <input type="submit" value="S'inscrire">
+ </div>
+ </form>
+ </div>
+ <div class="form-field">
+    <input type="submit" value="S'inscrire" id="submitButton" class="disabled">
+   </div>
+ <script src="js/app.js"></script>
+</body>
+</html>
